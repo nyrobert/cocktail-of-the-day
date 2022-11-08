@@ -42,7 +42,7 @@ class CocktailOfTheDay {
         }
 
         System.out.println("Name: " + cocktail.get("strDrink").asText());
-        System.out.println("Ingredients: " + ingredientsList);
+        System.out.println("Ingredients: " + String.join(", ", ingredientsList));
         System.out.println("Instructions: " + cocktail.get("strInstructions").asText());
     }
 }
